@@ -5,3 +5,5 @@ temp/
 vmd_scripts/
 modeller_script/__pycache__
 */*.log
+job_scripts/.DS_Store
+*/.DS_Store
