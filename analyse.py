@@ -12,13 +12,13 @@ def rmsd_traj(traj, ref, plot=False):
     time = R[1]
     
     if plot:
-        plt.figure(figsize=(10,5))
-        plt.plot(time, R[2])
+        plt.subplots(figsize=(10,5))
+        fig = plt.plot(time, R[2])
         plt.ylabel('RMSD ($\AA$)')
         plt.xlabel('time (ps)')
         plt.title('RMSD of C-alpha atoms over equilibration steps')
         plt.show()
-    return R
+    return R, fig
 
 	
 def secondary_structure(pdb_file):
@@ -57,3 +57,4 @@ def rmsf_plot(trajectories, title, structure=False):
     ax[len(trajectories)-1, 0].set_xlabel('residue')
     plt.tight_layout()
     plt.show()
+    return fig
