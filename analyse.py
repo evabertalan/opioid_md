@@ -5,19 +5,18 @@ import MDAnalysis.analysis.rms as rms
 import MDAnalysis.analysis.helanal as helanal
 import matplotlib.pyplot as plt
 
-def rmsd_traj(traj, ref, plot=False):
+def rmsd_traj(traj, ref, title):
     R = rms.RMSD(traj.select_atoms('name CA'), ref.select_atoms('name CA'), select='all').run()
     R = R.rmsd.T
     frame = R[0]
     time = R[1]
     
-    if plot:
-        plt.subplots(figsize=(10,5))
-        fig = plt.plot(time, R[2])
-        plt.ylabel('RMSD ($\AA$)')
-        plt.xlabel('time (ps)')
-        plt.title('RMSD of C-alpha atoms over equilibration steps')
-        plt.show()
+    plt.subplots(figsize=(10,5))
+    fig = plt.plot(time, R[2], linewidth=0.2)
+    plt.ylabel('RMSD ($\AA$)')
+    plt.xlabel('time (ps)')
+    plt.title(title)
+    plt.show()
     return R, fig
 
 	
