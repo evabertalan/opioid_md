@@ -20,9 +20,9 @@ def rmsd_traj(traj, ref, title):
     return R, fig
 
 	
-def secondary_structure(pdb_file):
+def secondary_structure(pdb_file, pdb_code):
     parser = biop.PDBParser()
-    structure = parser.get_structure('6b73', pdb_file)
+    structure = parser.get_structure(pdb_code, pdb_file)
     model = structure[0]
     dssp = biop.DSSP(model, pdb_file)
 
