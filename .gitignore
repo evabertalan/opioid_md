@@ -10,4 +10,4 @@ job_scripts/.DS_Store
 mdhbond
 *.png
 */*.png
-*/hbond_other
+hbond_other
