@@ -57,3 +57,36 @@ def rmsf_plot(trajectories, title, structure=False):
     plt.tight_layout()
     plt.show()
     return fig
+
+def rmsf_selected_residues(trajectories, residues, title):
+    fig, ax = plt.subplots(len(trajectories),1, sharex=True, figsize=(15, 4*len(trajectories)), squeeze=False)
+    for i in range(len(trajectories)):
+        protein = trajectories[i].select_atoms("protein")
+#         calphas = protein.select_atoms("name CA and ( resid 3:32 or resid 39:67 or resid 73:105 or resid 116:142 or resid 165:205 or resid 213:245 or resid 255:279 )")
+        
+        calphas = protein.select_atoms("name CA and ( resid 4:29 or resid 39:67 or resid 73:115 or resid 118:142 or resid 168:201 or resid 210:245 or resid 252:279 )")
+        
+        rmsfer = rms.RMSF(calphas).run()
+    
+        ax[i,0].plot(list(range(len(calphas))), rmsfer.rmsf)     
+        ax[i, 0].set_ylabel('RMSF ($\AA$)')
+        ax[i, 0].set_title(title.format(i+1))
+    
+    ax[len(trajectories)-1, 0].set_xlabel('residue')
+    plt.tight_layout()
+    plt.show()
+    return fig
+
+def waters_per_frame(water_files):
+    waters = np.loadtxt(water_files[0])
+    for i in range(1, len(water_files)):
+        data = np.loadtxt(water_files[i])
+        waters = np.concatenate((waters, data))
+
+    plt.subplots(figsize=(10,5))
+    fig =  plt.plot(waters[:,0], waters[:,1], linewidth=0.2)
+    plt.ylabel('waters')
+    plt.xlabel('frame')
+    plt.title('Number of water molecules within protein')
+    plt.show()
+    return fig

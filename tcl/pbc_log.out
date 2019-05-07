@@ -1,0 +1,186 @@
+Info) VMD for MACOSXX86, version 1.9.3 (November 30, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 4 CPUs detected.
+Info) Dynamically loaded 2 plugins in directory:
+Info) /Applications/VMD 1.9.3.app/Contents/vmd/plugins/MACOSXX86/molfile
+{/Applications/VMD 1.9.3.app/Contents/vmd/scripts/tcl8.5} {/Applications/VMD 1.9.3.app/Contents/vmd/scripts} {/Applications/VMD 1.9.3.app/Contents/Resources/VMD.app/Contents/lib} /Applications/VMD 1.9.3.app/Contents/Frameworks/Tcl.framework/Versions/8.5/Resources/Scripts ~/Library/Tcl /Library/Tcl /Network/Library/Tcl /System/Library/Tcl ~/Library/Frameworks /Library/Frameworks /Network/Library/Frameworks /System/Library/Frameworks {/Applications/VMD 1.9.3.app/Contents/vmd/scripts/vmd} {/Applications/VMD 1.9.3.app/Contents/vmd/plugins/MACOSXX86/tcl} {/Applications/VMD 1.9.3.app/Contents/vmd/plugins/noarch/tcl} /Users/evabertalan/Dropbox/research_proj/vmd_scripts/la1.0
+{/Applications/VMD 1.9.3.app/Contents/vmd/scripts/tcl8.5} {/Applications/VMD 1.9.3.app/Contents/vmd/scripts} {/Applications/VMD 1.9.3.app/Contents/Resources/VMD.app/Contents/lib} /Applications/VMD 1.9.3.app/Contents/Frameworks/Tcl.framework/Versions/8.5/Resources/Scripts ~/Library/Tcl /Library/Tcl /Network/Library/Tcl /System/Library/Tcl ~/Library/Frameworks /Library/Frameworks /Network/Library/Frameworks /System/Library/Frameworks {/Applications/VMD 1.9.3.app/Contents/vmd/scripts/vmd} {/Applications/VMD 1.9.3.app/Contents/vmd/plugins/MACOSXX86/tcl} {/Applications/VMD 1.9.3.app/Contents/vmd/plugins/noarch/tcl} /Users/evabertalan/Dropbox/research_proj/vmd_scripts/la1.0 /Users/evabertalan/Dropbox/research_proj/vmd_scripts/orient
+2.8
+4N6HA
+../../4N6HA/results/namd/step7.2_production.dcd ../../4N6HA/results/namd/step7.1_production.dcd ../../4N6HA/results/namd/step7.3_production.dcd
+psfplugin) Detected a Charmm PSF file
+psfplugin) Detected a Charmm PSF EXTEnded file
+Info) Using plugin psf for structure file ../../4N6HA/results/step5_assembly.xplor_ext.psf
+Info) Analyzing structure ...
+Info)    Atoms: 138105
+Info)    Bonds: 137610
+Info)    Angles: 135477  Dihedrals: 151441  Impropers: 1466  Cross-terms: 284
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 27832
+Info)    Waters: 26998
+Info)    Segments: 5
+Info)    Fragments: 27547   Protein: 1   Nucleic: 0
+0
+atomselect0
+3
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file ../../4N6HA/results/namd/step7.2_production.dcd
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.2_production.dcd.
+Info) 0.2% complete (frame 0)
+Info) 3.0% complete (frame 14)
+Info) 5.8% complete (frame 28)
+Info) 8.4% complete (frame 41)
+Info) 11.0% complete (frame 54)
+Info) 13.8% complete (frame 68)
+Info) 16.6% complete (frame 82)
+Info) 19.4% complete (frame 96)
+Info) 21.8% complete (frame 108)
+Info) 24.2% complete (frame 120)
+Info) 26.8% complete (frame 133)
+Info) 29.2% complete (frame 145)
+Info) 31.6% complete (frame 157)
+Info) 34.2% complete (frame 170)
+Info) 36.8% complete (frame 183)
+Info) 39.2% complete (frame 195)
+Info) 41.8% complete (frame 208)
+Info) 44.4% complete (frame 221)
+Info) 47.0% complete (frame 234)
+Info) 49.4% complete (frame 246)
+Info) 51.6% complete (frame 257)
+Info) 54.0% complete (frame 269)
+Info) 56.4% complete (frame 281)
+Info) 59.0% complete (frame 294)
+Info) 61.2% complete (frame 305)
+Info) 63.6% complete (frame 317)
+Info) 66.0% complete (frame 329)
+Info) 68.4% complete (frame 341)
+Info) 70.6% complete (frame 352)
+Info) 72.8% complete (frame 363)
+Info) 75.0% complete (frame 374)
+Info) 77.2% complete (frame 385)
+Info) 79.6% complete (frame 397)
+Info) 81.8% complete (frame 408)
+Info) 84.0% complete (frame 419)
+Info) 86.2% complete (frame 430)
+Info) 88.4% complete (frame 441)
+Info) 90.6% complete (frame 452)
+Info) 92.8% complete (frame 463)
+Info) 95.0% complete (frame 474)
+Info) 97.2% complete (frame 485)
+Info) 99.4% complete (frame 496)
+Info) 100.0% complete (frame 499)
+Info) Opened coordinate file ../../4N6HA/results/namd/step7.2_production.dcd-pbc.dcd for writing.
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.2_production.dcd-pbc.dcd.
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file ../../4N6HA/results/namd/step7.1_production.dcd
+Info) Coordinate I/O rate 42.2 frames/sec, 66 MB/sec, 11.8 sec
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.1_production.dcd.
+Info) 0.2% complete (frame 0)
+Info) 4.2% complete (frame 20)
+Info) 8.0% complete (frame 39)
+Info) 12.0% complete (frame 59)
+Info) 15.6% complete (frame 77)
+Info) 19.4% complete (frame 96)
+Info) 23.2% complete (frame 115)
+Info) 27.0% complete (frame 134)
+Info) 30.4% complete (frame 151)
+Info) 33.6% complete (frame 167)
+Info) 36.8% complete (frame 183)
+Info) 40.0% complete (frame 199)
+Info) 43.0% complete (frame 214)
+Info) 46.0% complete (frame 229)
+Info) 49.2% complete (frame 245)
+Info) 52.2% complete (frame 260)
+Info) 55.4% complete (frame 276)
+Info) 58.4% complete (frame 291)
+Info) 61.4% complete (frame 306)
+Info) 64.4% complete (frame 321)
+Info) 67.4% complete (frame 336)
+Info) 70.6% complete (frame 352)
+Info) 73.6% complete (frame 367)
+Info) 76.6% complete (frame 382)
+Info) 79.8% complete (frame 398)
+Info) 82.2% complete (frame 410)
+Info) 84.6% complete (frame 422)
+Info) 87.6% complete (frame 437)
+Info) 90.8% complete (frame 453)
+Info) 93.8% complete (frame 468)
+Info) 96.8% complete (frame 483)
+Info) 99.8% complete (frame 498)
+Info) 100.0% complete (frame 499)
+Info) Opened coordinate file ../../4N6HA/results/namd/step7.1_production.dcd-pbc.dcd for writing.
+Info) Coordinate I/O rate 46.4 frames/sec, 73 MB/sec, 10.8 sec
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.1_production.dcd-pbc.dcd.
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+Info) Using plugin dcd for coordinates from file ../../4N6HA/results/namd/step7.3_production.dcd
+Info) Coordinate I/O rate 33.1 frames/sec, 52 MB/sec, 15.1 sec
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.3_production.dcd.
+Info) 0.2% complete (frame 0)
+Info) 2.8% complete (frame 13)
+Info) 5.4% complete (frame 26)
+Info) 7.6% complete (frame 37)
+Info) 10.2% complete (frame 50)
+Info) 12.6% complete (frame 62)
+Info) 15.0% complete (frame 74)
+Info) 17.0% complete (frame 84)
+Info) 19.4% complete (frame 96)
+Info) 21.4% complete (frame 106)
+Info) 23.0% complete (frame 114)
+Info) 24.2% complete (frame 120)
+Info) 26.0% complete (frame 129)
+Info) 27.6% complete (frame 137)
+Info) 28.8% complete (frame 143)
+Info) 30.6% complete (frame 152)
+Info) 32.4% complete (frame 161)
+Info) 34.8% complete (frame 173)
+Info) 37.2% complete (frame 185)
+Info) 39.4% complete (frame 196)
+Info) 41.4% complete (frame 206)
+Info) 43.0% complete (frame 214)
+Info) 44.2% complete (frame 220)
+Info) 45.4% complete (frame 226)
+Info) 46.6% complete (frame 232)
+Info) 48.0% complete (frame 239)
+Info) 49.6% complete (frame 247)
+Info) 51.4% complete (frame 256)
+Info) 52.8% complete (frame 263)
+Info) 54.4% complete (frame 271)
+Info) 55.6% complete (frame 277)
+Info) 57.4% complete (frame 286)
+Info) 59.2% complete (frame 295)
+Info) 60.6% complete (frame 302)
+Info) 62.0% complete (frame 309)
+Info) 63.8% complete (frame 318)
+Info) 65.2% complete (frame 325)
+Info) 66.6% complete (frame 332)
+Info) 68.8% complete (frame 343)
+Info) 70.4% complete (frame 351)
+Info) 72.4% complete (frame 361)
+Info) 74.6% complete (frame 372)
+Info) 76.4% complete (frame 381)
+Info) 78.4% complete (frame 391)
+Info) 80.6% complete (frame 402)
+Info) 82.8% complete (frame 413)
+Info) 85.0% complete (frame 424)
+Info) 87.2% complete (frame 435)
+Info) 89.4% complete (frame 446)
+Info) 91.6% complete (frame 457)
+Info) 93.8% complete (frame 468)
+Info) 96.0% complete (frame 479)
+Info) 98.2% complete (frame 490)
+Info) 100.0% complete (frame 499)
+Info) Opened coordinate file ../../4N6HA/results/namd/step7.3_production.dcd-pbc.dcd for writing.
+Info) Coordinate I/O rate 41.7 frames/sec, 65 MB/sec, 12.0 sec
+Info) Finished with coordinate file ../../4N6HA/results/namd/step7.3_production.dcd-pbc.dcd.
+'DONE'
+Info) VMD for MACOSXX86, version 1.9.3 (November 30, 2016)
+Info) Exiting normally.
+vmd > 
