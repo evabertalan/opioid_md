@@ -1,4 +1,4 @@
-#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > water_count_log.out (eg: 6b73B)
+#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > pbc_log.txt (eg: 6b73B)
 
 set code $argv
 
@@ -57,4 +57,5 @@ for { set i 1 } { $i <= $nf } { incr i } {
 
 puts "Done"
 quit
+
 
