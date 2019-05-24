@@ -1,9 +1,9 @@
-#execute: vmd -dispdev text -e pbc.tcl -args FOLDER_NAME pbc_log.out (eg: 6b73B)
+#execute: vmd -dispdev text -e pbc.tcl -args FOLDER_NAME pbc_log.out 
+#eg: FOLDER_NAME = 6b73B
 
 package require pbctools
 set code $argv
 set files [glob ../../$code/results/namd/step7.*_production.dcd]
-#set files [glob ../step7.*_production.dcd]
 
 mol new ../../$code/results/step5_assembly.xplor_ext.psf type psf
 mol off top

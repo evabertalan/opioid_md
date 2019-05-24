@@ -18,3 +18,4 @@ example_waterwires.ipynb
 tcl/catdcd4.0
 tcl/catdcd
 tcl/*.out
+tcl/rmsd.tcl

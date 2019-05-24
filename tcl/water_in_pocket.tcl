@@ -1,4 +1,7 @@
-#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > water_count.out (e.g: 6b73B)
+#execute: vmd -dispdev text -e water_in_pocket.tcl -args FOLDER_NAME SELECTION > water_in_pocket_log.out)
+# e.g: FOLDER_NAME = 6b73B
+# e.g: SELECTION = {'(water within 3 of (resname THR and resid 55) or (resname ASP and resid 84) or (resname LYS and resid 173) or (resname TRP and resid 233) or (resname TYR and resid 266) or (resname GLY and resid 265)) and oxygen'}
+
 
 set code [lindex $argv 0]
 

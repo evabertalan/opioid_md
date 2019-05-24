@@ -1,4 +1,7 @@
-#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > water_count.out (e.g: 6b73B)
+#execute: vmd -dispdev text -e water_near_residue.tcl -args FOLDER_NAME PARAMETERS > water_near_residue_log.out
+# e.g: FOLDER_NAME = 6b73B
+# e.g: PARAMETERS = 233 TRP 3
+
 
 set code [lindex $argv 0]
 
