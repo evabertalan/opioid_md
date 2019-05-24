@@ -11,3 +11,7 @@ mdhbond
 *.png
 */*.png
 hbond_other
+tcl/*.out
+example_hbonds.ipynb
+example_waterwires.ipynb
+

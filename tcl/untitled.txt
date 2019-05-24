@@ -1,0 +1,42 @@
+#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > water_count.out (e.g: 6b73B)
+
+set code [lindex $argv 0]
+
+mol new ../../$code/results/step5_assembly.xplor_ext.psf type psf
+
+set filelist [glob ../../$code/results/namd/step7.*_production.dcd-pbc.dcd]
+set nf [llength $filelist]
+
+for { set i 1 } { $i <= $nf } { incr i } {
+	set crnt_file [glob ../../$code/results/namd/step7.${i}_production.dcd-pbc.dcd]
+    mol addfile $crnt_file
+}
+
+set frames [molinfo top get numframes]
+set fp [open "waters.txt" w]
+
+set x [lindex $argv 1]
+set y [lindex $argv 2]
+set z [lindex $argv 3]
+set _x [lindex $argv 4]
+set _y [lindex $argv 5]
+set _z [lindex $argv 6]
+set distance [lindex $argv 7]
+
+#set selection [atomselect top "(water within $distance of protein) and (x<$x and y<$y and z<$z and -x<$_x and -y<$_y and -z<$_z)"]
+
+set selection "(water within $distance of protein) and (x<$x and y<$y and z<$z and -x<$_x and -y<$_y and -z<$_z)"
+
+for {set i 0} {$i < $frames} {incr i} {
+                puts "Frame: $i"
+                set a [atomselect top $selection frame $i]
+                set num [$a num]
+                puts $fp "$i $num"
+                $a delete
+}
+
+close $fp
+
+puts "Done"
+quit
+

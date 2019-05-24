@@ -1,6 +1,7 @@
-#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > pbc_log.txt (eg: 6b73B)
+#execute: vmd -dispdev text -e water_count.tcl -args FOLDER_NAME > water_count.out (e.g: 6b73B)
 
-set code $argv
+
+set code [lindex $argv 0]
 
 mol new ../../$code/results/step5_assembly.xplor_ext.psf type psf
 mol off top
@@ -11,13 +12,13 @@ set filelist [glob ../../$code/results/namd/step7.*_production.dcd-pbc.dcd]
 #set filelist [glob ../../step7.*_production.dcd-pbc.dcd]
 set nf [llength $filelist]
 
-set x 10
-set y 18
-set z 10
-set _x 17
-set _y 18
-set _z 17
-set distance 5
+set x [lindex $argv 1]
+set y [lindex $argv 2]
+set z [lindex $argv 3]
+set _x [lindex $argv 4]
+set _y [lindex $argv 5]
+set _z [lindex $argv 6]
+set distance [lindex $argv 7]
 
 set selection [atomselect top "(water within $distance of protein) and (x<$x and y<$y and z<$z and -x<$_x and -y<$_y and -z<$_z)"]
 

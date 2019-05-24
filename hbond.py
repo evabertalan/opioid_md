@@ -48,7 +48,10 @@ class HBond:
         self.by_type_df.columns = ['donor_index', 'acceptor_index', 'donor_resnm',
                            'donor_resid','donor_heavy_atom', 'donor_atom', 'acceptor_resnm',
                            'acceptor_resid', 'acceptor_atom', 'frequency']
-        print(self.by_type_df)
+        print('sajt')
+#         print(self.by_type_df)
+        return self.by_type_df
+    
         
     def inter_frequency(self, bins, treshhold=0.5):
         inter_hbond = self.by_type_df.loc[(self.by_type_df['frequency'] > treshhold) & (self.by_type_df['donor_resid'] != self.by_type_df['acceptor_resid'])]

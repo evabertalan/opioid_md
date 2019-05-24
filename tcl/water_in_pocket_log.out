@@ -7,7 +7,7 @@ Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
 Info) -------------------------------------------------------------
 Info) Multithreading available, 4 CPUs detected.
 Info)   CPU features: SSE2 AVX 
-Info) Free system memory: 6326MB (39%)
+Info) Free system memory: 12GB (77%)
 Info) No CUDA accelerator devices available.
 Info) Dynamically loaded 2 plugins in directory:
 Info) /net/opt/vmd/vmd-1.9.3/lib/plugins/LINUXAMD64/molfile
@@ -31,18 +31,10 @@ Info)    Fragments: 30542   Protein: 1   Nucleic: 0
 -1
 ../../6b73B/results/namd/step7.14_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.1_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.15_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.17_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.3_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.8_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.16_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.9_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.2_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.6_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.12_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.7_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.13_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.11_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.5_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.10_production.dcd-pbc.dcd ../../6b73B/results/namd/step7.4_production.dcd-pbc.dcd
 17
-11
-9
-15
-13
-12
-18
-5
-(water within 5 of protein) and (x<11 and y<9 and z<15 and -x<13 and -y<12 and -z<18) and oxygen
+(water within 3 of (resname THR and resid 55) or (resname ASP and resid 84) or (resname LYS and resid 173) or (resname TRP and resid 233) or (resname TYR and resid 266) or (resname GLY and resid 265)) and oxygen
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.1_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 25.2 frames/sec, 42 MB/sec, 19.8 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.1_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -547,7 +539,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.2_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 24.7 frames/sec, 41 MB/sec, 20.2 sec
+Info) Coordinate I/O rate 65.2 frames/sec, 109 MB/sec, 7.7 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.2_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -1052,7 +1044,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.3_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 27.3 frames/sec, 45 MB/sec, 18.3 sec
+Info) Coordinate I/O rate 65.5 frames/sec, 110 MB/sec, 7.6 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.3_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -1557,7 +1549,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.4_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 28.8 frames/sec, 48 MB/sec, 17.4 sec
+Info) Coordinate I/O rate 65.8 frames/sec, 110 MB/sec, 7.6 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.4_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -2062,7 +2054,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.5_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 27.8 frames/sec, 46 MB/sec, 18.0 sec
+Info) Coordinate I/O rate 65.7 frames/sec, 110 MB/sec, 7.6 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.5_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -2567,7 +2559,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.6_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 27.2 frames/sec, 45 MB/sec, 18.4 sec
+Info) Coordinate I/O rate 63.7 frames/sec, 107 MB/sec, 7.8 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.6_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -3072,7 +3064,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.7_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 24.7 frames/sec, 41 MB/sec, 20.2 sec
+Info) Coordinate I/O rate 61.8 frames/sec, 103 MB/sec, 8.1 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.7_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -3577,7 +3569,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.8_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 28.4 frames/sec, 47 MB/sec, 20.0 sec
+Info) Coordinate I/O rate 65.5 frames/sec, 110 MB/sec, 8.7 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.8_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -4150,7 +4142,7 @@ Frame: 567
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.9_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 24.0 frames/sec, 40 MB/sec, 20.8 sec
+Info) Coordinate I/O rate 66.4 frames/sec, 111 MB/sec, 7.5 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.9_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -4655,7 +4647,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.10_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 23.5 frames/sec, 39 MB/sec, 18.4 sec
+Info) Coordinate I/O rate 65.8 frames/sec, 110 MB/sec, 6.6 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.10_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -5092,7 +5084,7 @@ Frame: 431
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.11_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 27.5 frames/sec, 46 MB/sec, 15.9 sec
+Info) Coordinate I/O rate 62.0 frames/sec, 104 MB/sec, 7.0 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.11_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -5534,7 +5526,7 @@ Frame: 436
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.12_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 28.2 frames/sec, 47 MB/sec, 14.9 sec
+Info) Coordinate I/O rate 65.8 frames/sec, 110 MB/sec, 6.4 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.12_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -5959,7 +5951,7 @@ Frame: 419
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.13_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 31.1 frames/sec, 52 MB/sec, 11.6 sec
+Info) Coordinate I/O rate 63.5 frames/sec, 106 MB/sec, 5.7 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.13_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -6325,7 +6317,7 @@ Frame: 360
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.14_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 25.0 frames/sec, 42 MB/sec, 20.0 sec
+Info) Coordinate I/O rate 64.7 frames/sec, 108 MB/sec, 7.7 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.14_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -6830,7 +6822,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.15_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 25.8 frames/sec, 43 MB/sec, 19.4 sec
+Info) Coordinate I/O rate 64.8 frames/sec, 108 MB/sec, 7.7 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.15_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -7335,7 +7327,7 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.16_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 26.3 frames/sec, 44 MB/sec, 19.0 sec
+Info) Coordinate I/O rate 53.7 frames/sec, 90 MB/sec, 9.3 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.16_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1
@@ -7840,7 +7832,6 @@ Frame: 499
 dcdplugin) detected standard 32-bit DCD file of native endianness
 dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
 Info) Using plugin dcd for coordinates from file ../../6b73B/results/namd/step7.17_production.dcd-pbc.dcd
-Info) Coordinate I/O rate 24.3 frames/sec, 40 MB/sec, 20.6 sec
 Info) Finished with coordinate file ../../6b73B/results/namd/step7.17_production.dcd-pbc.dcd.
 Frame: 0
 Frame: 1

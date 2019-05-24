@@ -12,9 +12,9 @@ def rmsd_traj(traj, ref, title):
     time = R[1]
     
     plt.subplots(figsize=(10,5))
-    fig = plt.plot(time, R[2], linewidth=0.2)
+    fig = plt.plot(time/1000, R[2], linewidth=0.2)
     plt.ylabel('RMSD ($\AA$)')
-    plt.xlabel('time (ps)')
+    plt.xlabel('time (ns)')
     plt.title(title)
     plt.show()
     return R, fig
@@ -41,14 +41,14 @@ def rmsf_plot(trajectories, title, structure=False):
         calphas = protein.select_atoms("name CA")
         rmsfer = rms.RMSF(calphas).run()
     
-        ax[i,0].plot(calphas.resnums, rmsfer.rmsf)
+        ax[i,0].plot(calphas.resnums, rmsfer.rmsf, color='green')
 
         if structure:
             for j, k, in enumerate(structure['helix']):
-                ax[i,0].axvline(k, color='grey', alpha=0.1)
+                ax[i,0].axvline(k, color='#3b3b3b', alpha=0.1)
 
-            for j, k, in enumerate(structure['pi_helix']):
-                ax[i,0].axvline(k, color='grey', alpha=0.2)     
+#             for j, k, in enumerate(structure['pi_helix']):
+#                 ax[i,0].axvline(k, color='grey', alpha=0.2)     
 
         ax[i, 0].set_ylabel('RMSF ($\AA$)')
         ax[i, 0].set_title(title.format(i+1))
@@ -82,11 +82,12 @@ def waters_per_frame(water_files):
     for i in range(1, len(water_files)):
         data = np.loadtxt(water_files[i])
         waters = np.concatenate((waters, data))
+#     plt.plot(waters[:,1])
 
     plt.subplots(figsize=(10,5))
-    fig =  plt.plot(waters[:,0], waters[:,1], linewidth=0.2)
+    fig = plt.plot(waters[:,1], linewidth=0.2)
     plt.ylabel('waters')
     plt.xlabel('frame')
-    plt.title('Number of water molecules within protein')
+    plt.title('Number of water within protein')
     plt.show()
     return fig
