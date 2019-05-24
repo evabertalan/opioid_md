@@ -11,6 +11,7 @@ mdhbond
 *.png
 */*.png
 hbond_other
+job_scripts
 
 example_hbonds.ipynb
 example_waterwires.ipynb
