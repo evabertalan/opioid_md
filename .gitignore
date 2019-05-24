@@ -11,7 +11,10 @@ mdhbond
 *.png
 */*.png
 hbond_other
-tcl/*.out
+
 example_hbonds.ipynb
 example_waterwires.ipynb
 
+tcl/catdcd4.0
+tcl/catdcd
+tcl/*.out
