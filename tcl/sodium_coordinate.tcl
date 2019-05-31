@@ -1,10 +1,10 @@
 #execute: vmd -dispdev text -e water_near_residue.tcl -args CODE FILELIST SOD_RESID sod_x sod_y sod_z > sodium_coordinate_log.out
 # e.g: CODE = 6b73B
 # e.g: FILELIST = 
-# e.g: SOD_RESID = 
-# e.g: sod_x = 
-# e.g: sod_y = 
-# e.g: sod_z = 
+# e.g: SOD_RESID = 50
+# e.g: sod_x = -4.959457
+# e.g: sod_y = -6.712894
+# e.g: sod_z = -3.926964
 
 set code [lindex $argv 0]
 set files [lindex $argv 1]
