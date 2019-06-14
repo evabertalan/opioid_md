@@ -6,7 +6,7 @@ import MDAnalysis.analysis.helanal as helanal
 import matplotlib.pyplot as plt
 
 def rmsd_traj(traj, ref, title):
-    R = rms.RMSD(traj.select_atoms('name CA'), ref.select_atoms('name CA'), select='all').run()
+    R = rms.RMSD(traj.select_atoms('name CA'), ref.select_atoms('name CA')).run()
     R = R.rmsd.T
     frame = R[0]
     time = R[1]
@@ -53,10 +53,10 @@ def rmsf_plot(trajectories, title, structure=False):
         ax[i, 0].set_ylabel('RMSF ($\AA$)')
         ax[i, 0].set_title(title.format(i+1))
     
-    ax[len(trajectories)-1, 0].set_xlabel('residue')
+    ax[len(trajectories)-1, 0].set_xlabel('residue ID')
     plt.tight_layout()
     plt.show()
-    return fig
+    return fig, calphas.resnums, rmsfer.rmsf
 
 def rmsf_selected_residues(trajectories, residues, title):
     fig, ax = plt.subplots(len(trajectories),1, sharex=True, figsize=(15, 4*len(trajectories)), squeeze=False)
